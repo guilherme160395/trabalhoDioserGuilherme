@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"></TextView>
+
+    <TextView
+        android:id="@+id/textViewLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Gravação"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="25dp"></TextView>
+
+    <EditText
+        android:id="@+id/descricaoAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="Informe a Descrição do Áudio"
+        android:layout_gravity="center"
+        android:textAllCaps="false"></EditText>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/botaoIniciarGravacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Iniciar Gravação"
+        android:layout_gravity="center"
+        android:textAllCaps="false" ></Button>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/botaoEncerrarGravacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Encerrar Gravação"
+        android:layout_gravity="center"
+        android:textAllCaps="false" ></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Relatórios"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="25dp"></TextView>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/exibirLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="Exibir Registros em Formato de Lista"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="RelatorioLista"></Button>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/exibirMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="Exibir Registros em Formato de Mapa"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="RelatorioMapa"></Button>
+
+</LinearLayout>
