@@ -293,4 +293,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), ActivityRelatorioMapa.class);
         startActivity(intent);
     }
+
+    public void RelatorioMapa2(View view) {
+        Intent intent = new Intent(getApplicationContext(), ActivityRelatorioMapa2.class);
+        startActivity(intent);
+    }
 }

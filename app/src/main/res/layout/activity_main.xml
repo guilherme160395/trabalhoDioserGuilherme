@@ -73,10 +73,22 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="15dp"
-        android:text="Exibir Registros em Formato de Mapa"
+        android:text="Exibir Registros em Formato de Mapa - 1"
         android:layout_gravity="center"
         android:textAllCaps="false"
         android:onClick="RelatorioMapa"></Button>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/exibirMapa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="Exibir Registros em Formato de Mapa - 2"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="RelatorioMapa2"></Button>
 
     <LinearLayout
         android:layout_width="wrap_content"

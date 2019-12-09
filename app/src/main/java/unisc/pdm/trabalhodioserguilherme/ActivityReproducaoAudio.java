@@ -129,6 +129,7 @@ public class ActivityReproducaoAudio extends AppCompatActivity {
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     public void onCompletion(MediaPlayer mediaPlayer) {
                         visualizer.setEnabled(false);
+                        buttonPlay.setEnabled(true);
                     }
                 });
 
