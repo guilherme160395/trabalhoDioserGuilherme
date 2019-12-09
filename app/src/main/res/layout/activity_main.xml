@@ -8,26 +8,9 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewLatitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:textAllCaps="false"
-        android:layout_gravity="center"></TextView>
-
-    <TextView
-        android:id="@+id/textViewLongitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:textAllCaps="false"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Gravação"
         android:layout_gravity="center"
         android:textAllCaps="false"
@@ -43,7 +26,7 @@
         android:textAllCaps="false"></EditText>
 
     <Button
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/botaoIniciarGravacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +36,7 @@
         android:textAllCaps="false" ></Button>
 
     <Button
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/botaoEncerrarGravacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,14 +48,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="15dp"
         android:text="Relatórios"
         android:layout_gravity="center"
         android:textAllCaps="false"
         android:textSize="25dp"></TextView>
 
     <Button
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/exibirLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +67,7 @@
         android:onClick="RelatorioLista"></Button>
 
     <Button
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/exibirMapa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,5 +77,58 @@
         android:layout_gravity="center"
         android:textAllCaps="false"
         android:onClick="RelatorioMapa"></Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude:"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textViewLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="..."
+            android:textSize="15dp"
+            android:textAllCaps="false"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textViewLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="..."
+            android:textSize="15dp"
+            android:textAllCaps="false"></TextView>
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>

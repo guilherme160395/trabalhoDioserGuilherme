@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.ByteArrayOutputStream;
@@ -39,7 +40,7 @@ public class ActivityReproducaoAudio extends AppCompatActivity {
     private DatabaseHelper helper;
     private Cursor cursor;
     private TextView textViewId, textViewDescricao, textViewDataHora, textViewLatitude, textViewLongitude;
-    private Button buttonPlay, buttonStop;
+    private ImageButton buttonPlay, buttonStop;
     private ByteArrayOutputStream byteOutStream = null;
     private OutputStream outStream = null;
     private MediaPlayer mediaPlayer;
@@ -156,11 +157,6 @@ public class ActivityReproducaoAudio extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void retornarLista(View view) {
-        Intent intent = new Intent(getApplicationContext(), ActivityRelatorioLista.class);
-        startActivity(intent);
     }
 
     private void setupVisualizerFxAndUI() {
