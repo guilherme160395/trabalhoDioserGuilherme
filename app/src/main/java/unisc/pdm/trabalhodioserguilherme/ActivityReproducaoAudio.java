@@ -176,15 +176,6 @@ public class ActivityReproducaoAudio extends AppCompatActivity {
                 }, Visualizer.getMaxCaptureRate() / 2, true, false);
     }
 
-    public void alterarRegistro(View view) {
-        Intent intent = new Intent(getApplicationContext(), ActivityAlterar.class);
-        intent.putExtra("id", textViewId.getText().toString());
-        intent.putExtra("descricao", textViewDescricao.getText().toString());
-        intent.putExtra("data_hora", textViewDataHora.getText().toString());
-        intent.putExtra("latitude", textViewLatitude.getText().toString());
-        intent.putExtra("longitude", textViewLongitude.getText().toString());
-        startActivity(intent);
-    }
 
     public void deletarRegistro(View view) {
         SQLiteDatabase db = helper.getWritableDatabase();
